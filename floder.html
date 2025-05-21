@@ -86,12 +86,12 @@
 
   <!-- Background Video -->
   <video class="bg-video" autoplay muted loop playsinline>
-    <source src="image/bg1.mp4" type="video/mp4" />
+    <source src="bg1.mp4" type="video/mp4" />
   </video>
 
   <!-- Background Audio -->
   <audio id="bg-audio" autoplay loop>
-    <source src="image/ad1.mp3" type="audio/mp3" />
+    <source src="ad1.mp3" type="audio/mp3" />
   </audio>
 
   <script>
@@ -117,7 +117,7 @@
         const url = URL.createObjectURL(file);
         let previewHTML = "";
 
-        if (fileType.startsWith("image/")) {
+        if (fileType.startsWith("")) {
           previewHTML = `
             <img src="${url}" class="rounded w-full h-auto mb-2" />
             <p class="text-white text-sm text-center">${captionText}</p>
@@ -149,7 +149,7 @@
     <!-- Upload with Caption -->
     <!-- <div class="mb-10 bg-white bg-opacity-20 backdrop-blur-md p-4 rounded shadow max-w-xl mx-auto">
       <h2 class="text-2xl font-semibold mb-4">📤 Upload Image or Video with Caption</h2>
-      <input type="file" accept="image/*,video/*" onchange="showPreview(event)" class="mb-4 text-white w-full" />
+      <input type="file" accept="*,video/*" onchange="showPreview(event)" class="mb-4 text-white w-full" />
       <input type="text" id="caption-input" placeholder="Enter a caption..." class="mb-4 w-full px-3 py-2 rounded text-black" />
       <p class="text-xs text-gray-200">Only one preview at a time will be shown below.</p>
     </div> -->
@@ -162,14 +162,14 @@
 
       <!-- Example Image -->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
-        <img src="image/CM0.jpg" class="rounded w-full h-auto mb-2" />
+        <img src="CM0.jpg" class="rounded w-full h-auto mb-2" />
         <p class="text-white text-sm text-center">Sridaracharyulu</p>
       </div>
 
 <!-- Example Video 000-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/vd1.mp4" type="video/mp4" />
+          <source src="vd1.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">MUKOTI YEKADHASHI</p>
       </div>
@@ -177,7 +177,7 @@
       <!-- Example Video 1-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p1.mp4" type="video/mp4" />
+          <source src="p1.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 1</p>
       </div>
@@ -185,7 +185,7 @@
       <!-- Example Video 2-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p2.mp4" type="video/mp4" />
+          <source src="p2.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 2</p>
       </div>
@@ -193,7 +193,7 @@
       <!-- Example Video 3-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p3.mp4" type="video/mp4" />
+          <source src="p3.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 3</p>
       </div>
@@ -201,7 +201,7 @@
       <!-- Example Video 4-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p4.mp4" type="video/mp4" />
+          <source src="p4.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 4</p>
       </div>
@@ -209,7 +209,7 @@
           <!-- Example Video 5-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p5.mp4" type="video/mp4" />
+          <source src="p5.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 5</p>
       </div>
@@ -261,7 +261,7 @@
       <!-- Example Video 11-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p11.mp4" type="video/mp4" />
+          <source src="p11.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 11</p>
       </div>
@@ -270,7 +270,7 @@
 <!-- Example Video 12-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p12.mp4" type="video/mp4" />
+          <source src="p12.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 12</p>
       </div>
@@ -278,7 +278,7 @@
 <!-- Example Video 13-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p13.mp4" type="video/mp4" />
+          <source src="p13.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 13</p>
       </div>
@@ -288,7 +288,7 @@
 <!-- Example Video 14-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p14.mp4" type="video/mp4" />
+          <source src="p14.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 14</p>
       </div>
@@ -296,7 +296,7 @@
 <!-- Example Video 15-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p15.mp4" type="video/mp4" />
+          <source src="p15.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 15</p>
       </div>
@@ -306,7 +306,7 @@
 <!-- Example Video 16-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p16.mp4" type="video/mp4" />
+          <source src="p16.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 16</p>
       </div>
@@ -314,7 +314,7 @@
 <!-- Example Video 17-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p17.mp4" type="video/mp4" />
+          <source src="p17.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 17</p>
       </div>
@@ -323,7 +323,7 @@
 <!-- Example Video 18-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p18.mp4" type="video/mp4" />
+          <source src="p18.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 18</p>
       </div>
@@ -332,7 +332,7 @@
 <!-- Example Video 19-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p19.mp4" type="video/mp4" />
+          <source src="p19.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 19</p>
       </div>
@@ -340,7 +340,7 @@
 <!-- Example Video 20-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p20.mp4" type="video/mp4" />
+          <source src="p20.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 20</p>
       </div>
@@ -349,7 +349,7 @@
 <!-- Example Video 21-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p21.mp4" type="video/mp4" />
+          <source src="p21.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 21</p>
       </div>
@@ -358,7 +358,7 @@
 <!-- Example Video 22-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/P22.mp4" type="video/mp4" />
+          <source src="P22.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 22</p>
       </div>
@@ -366,7 +366,7 @@
 <!-- Example Video 23-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p23.mp4" type="video/mp4" />
+          <source src="p23.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 23</p>
       </div>
@@ -376,7 +376,7 @@
 <!-- Example Video 24-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p24.mp4" type="video/mp4" />
+          <source src="p24.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 24</p>
       </div>
@@ -384,7 +384,7 @@
 <!-- Example Video 25-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p25.mp4" type="video/mp4" />
+          <source src="p25.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 25</p>
       </div>
@@ -394,7 +394,7 @@
 <!-- Example Video 26-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p26.mp4" type="video/mp4" />
+          <source src="p26.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 26</p>
       </div>
@@ -402,7 +402,7 @@
 <!-- Example Video 27-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p27.mp4" type="video/mp4" />
+          <source src="p27.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 27</p>
       </div>
@@ -411,7 +411,7 @@
 <!-- Example Video 28-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p28.mp4" type="video/mp4" />
+          <source src="p28.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 28</p>
       </div>
@@ -420,7 +420,7 @@
 <!-- Example Video 29-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/P29.mp4" type="video/mp4" />
+          <source src="P29.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 29</p>
       </div>
@@ -428,28 +428,28 @@
 <!-- Example Video 30-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/p30.mp4" type="video/mp4" />
+          <source src="p30.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center">పాశురం 30</p>
       </div>
 <!-- Example Video 000-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/s1.mp4" type="video/mp4" />
+          <source src="s1.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center"></p>
       </div>
       <!-- Example Video 000-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/s2.mp4" type="video/mp4" />
+          <source src="s2.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center"></p>
       </div>
       <!-- Example Video 000-->
       <div class="masonry-item bg-white bg-opacity-20 backdrop-blur-md p-2 rounded shadow">
         <video controls class="rounded w-full h-auto mb-2">
-          <source src="image/s3.mp4" type="video/mp4" />
+          <source src="s3.mp4" type="video/mp4" />
         </video>
         <p class="text-white text-sm text-center"></p>
       </div>
