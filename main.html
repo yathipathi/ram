@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Temple Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-white relative">
+
+  <!-- Background Video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="image/bg1.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Audio -->
+  <audio id="bg-audio" autoplay loop>
+    <source src="image/ad1.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Header -->
+  <header class="text-center py-6 relative z-10">
+    <h1 class="text-4xl font-bold">📂 Temple Gallery</h1>
+  </header>
+
+  <!-- Upload Section -->
+  <section class="relative z-10 px-4 max-w-xl mx-auto mb-10">
+    <div class="bg-white bg-opacity-20 p-4 rounded shadow">
+      <h2 class="text-2xl font-semibold mb-4">Upload Image</h2>
+      <img id="preview" class="hidden w-full h-auto rounded mb-4" alt="Preview" />
+      <input type="file" accept="image/*" onchange="showPreview(event)" class="text-white w-full" />
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="relative z-10 px-4">
+    <div class="masonry">
+      <!-- Example Image -->
+      <div class="masonry-item bg-white bg-opacity-20 p-2 rounded shadow">
+        <img src="image/img1.jpg" class="w-full h-auto rounded" />
+      </div>
+
+      <!-- Example Video -->
+      <div class="masonry-item bg-white bg-opacity-20 p-2 rounded shadow">
+        <video controls class="w-full h-auto rounded">
+          <source src="image/vd1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Add more images/videos here -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
