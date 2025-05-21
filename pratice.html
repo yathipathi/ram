@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <title>Temple Donors - Silver Level</title>
+   <title>Moving Warning</title>
+<style>
+.warning-container {
+  overflow: hidden; /* Hide text that goes beyond the container */
+  white-space: nowrap; /* Prevent text from wrapping */
+  background-color: #fceabb; /* A softer yellow */
+  color: #d9534f; /* A shade of red */
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 5px; /* Slightly rounded corners */
+  margin-bottom: 10px; /* Add some space below */
+}
+
+
+.warning-text {
+  display: inline-block; /* Allows for horizontal movement */
+  padding-left: 100%; /* Start off-screen on the right */
+  animation: scroll-left 15s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+</style>
+<style>
+    body {
+      background-image: url('image/bg777.jpg'); /* ✅ Add your image path here */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="warning-container">
+  <span class="warning-text"><i><b><u>NOTE:</u></b></i> Donors who donated 5,000 and above will appear on the site.</span>
+</div>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ff9100;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .donor-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .donor-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 40px;
+      position: relative;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .donor-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ffe6a1;
+      color: #5c3b00;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .donor-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 15px;
+    }
+
+    .donor-amount {
+      font-size: 22px;
+      color: #f50052;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .jai-ram {
+      font-size: 20px;
+      color: #de6c14;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <h2>Temple Donors </h2> -->
+
+  <div class="donor-container" id="donorContainer">
+    <!-- Donor cards will be inserted here dynamically -->
+  </div>
+
+  <script>
+    const donors = [
+//                  { id: 1, name: " గౌరిశెట్టి రాజమౌళి-రాజేశ్వరి (ఎస్.పి.ఆర్. స్కూల్స్)", amount: 100116, address: "JAI SREE RAM",  },
+// { id: 2, name: " బండారి ప్రవీణ్కుమార్-లక్ష్మి", amount: 100116, address: "JAI SREE RAM", level: "gold" },
+//  { id: 3, name: "పుల్లూరి ప్రభాకర్రావు-అహల్య (నాగార్జున మిల్క్ ప్రోడక్ట్స్)పుల్లూరి గణేష్-శృతి", amount: 100116, address: "JAI SREE RAM", level: "gold" },
+// { id: 4, name: "నాగార్జున సీడ్స్, పెద్దపాపయ్యపల్లి పుల్లూరి కలింగరావు-జీవిత,పుల్లూరి రాజేశ్వర్రావు-ప్రమీల,దేవరనేని స్వామిరావు-రజిత", amount: 50116, address: "JAI SREE RAM", level: "silver" },
+//             { id: 5, name: "ఎన్.ఎస్.ఆర్. డైరి, నాయినేని సంపర్రావు-లక్ష్మి,లింగంపల్లి నాగేశ్వర్రావు-నిఖిత", amount: 50116, address: "JAI SREE RAM", level: "silver" },
+//             { id: 6, name: "కొలిపాక అరుణ్్శరి-శ్రావణి", amount:50116, address: "JAI SREE RAM", level: "silver" },
+//             { id: 7, name: " అమిరిశెట్టి శ్రీనివాస్-అరుణ", amount: 30000, address: "JAI SREE RAM", level: "bronze" },
+//             { id: 8, name: "గందె శ్రీనివాస్-రాధిక", amount: 25116, address: "JAI SREE RAM", level: "bronze" },
+//             { id: 9, name: "గొరిట్యాల సుధాకర్-వసంతరాణి,శివనాథుని రవీందర్-రాజేశ్వరి", amount: 25116, address: "JAI SREE RAM", level: "bronze" },
+//             { id: 10, name: "శివప్రసాద్ -స్వప్న", amount: 25116, address: "JAI SREE RAM", level: "bronze" },
+//             { id: 11, name: "రాగి సాయిప్రసన్న - విజయ్కుమార్", amount: 25116, address: "JAI  SREE RAM", level: "gold" },
+//             { id: 12, name: " మొలుగు సృజన- పూర్ణచందర్ ", amount: 25116, address: "JAI SREE RAM", level: "silver" },
+//          { id: 13, name: "ఆడెపు సూర్యం-సంధ్యారాణి", amount: 25000, address: "JAI SREE RAM", level: "silver" },
+//             { id: 14, name: "ఓరుంగంటి హైమావతి-రఘుపతిరెడ్డి", amount: 11116, address: "JAI SREE RAM", level: "silver" },
+// { id: 15, name: "దోమకుంట్ల రాజు-రాధిక", amount: 11116, address: "JAI SREE RAM", level: "silver" },
+// { id: 16, name: "కొలిపార బాజ్జి-నాగలక్ష్మి", amount: 11000, address: "JAI SREE RAM", level: "silver" },
+// { id: 17, name: "ఇరుమల్ల రాణి-సురేందర్రెడ్డి (మాజి యం.పి.పి.)", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 18, name: "గర్రెపల్లి శ్రీనివాస్-రజిత", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 19, name: "పుల్లూరి యాదగిరి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 20, name: "డా॥ తొగరు విద్యాసాగర్-శ్రీవాణి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 21, name: "లింగంపల్లి సమోదర్రావు- వినోద", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 22, name: "బద్దం ముత్యం రెడ్డి-శారద", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 23, name: "నార్ల శ్రీనివాస్-సునీత", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 24, name: "సుద్దాల హరిశంకర్-నాగరాణి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 25, name: "బచ్చు అభినయ్-స్నేహ (జమ్మికుంట)", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 26, name: "వోడ్నాల సత్యనారాయణ-సుధారాణి (జె.కె.ఎంటర్ప్రైజెస్)", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 27, name: "కొమురవెల్లి శకుంతాలదేవి-వీరేశం", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 28, name: "వెన్కెపెల్లి సత్యనారాయణ-సురేఖ", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 29, name: "గుంపుల శ్రీనివాస్ యాదవ్-సునిత", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 30, name: "పాకాల మల్లారెడ్డి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 31, name: "భూసారపు బాపురావు-పద్మ (విశ్రాంత ఉపాధ్యాయుడు)", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 32, name: "దార్ణ పూర్ణచందర్-రమాదేవి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 33, name: "కాట్ర రాత్రెడ్డి-అన్నపూర్ణ", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 34, name: "ఏరుకొండ దేవేందర్-దేవి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 35, name: "దాసి ప్రభాకర్-లలిత", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 36, name: "ముచ్చ అరుణ-నారాయణ రెడ్డి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 37, name: "చొల్లేటి లావణ్య-కిషన్రెడ్డి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 38, name: "తొడుపూనూరి శ్రీదేవి-తిరుపతి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 39, name: "డా॥ తొగరు విద్యాసాగర్-శ్రీవాణి (సురక్ష హస్పిటల్)", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 40, name: "లింగంపెల్లి సమ్మోదర్రావు-వినోద", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 41, name: "గూడూరి మోహన్రెడ్డి-సులోచన", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 42, name: "కళ్ళెపు రవీందర్రావు-నిర్మల", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 43, name: "సామ లక్ష్మీనారాయణ-రాణి", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 44, name: "పాకాల మల్లారెడ్డి-యాదలక్ష్మి", amount: 10116	, address: "JAI SREE RAM", level: "silver" },
+// { id: 45, name: "నార్ల శోభ-రాజేందర్", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 46, name: "ఆకుల రమేష్-రాధిక", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 47, name: "మాడిశెట్టి లీల శ్రీకాంత్", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 48, name: "నరేంద్రుని స్వప్న-రాజేష్", amount: 10116, address: "JAI SREE RAM", level: "silver" },
+// { id: 49, name: "డా॥ జి. లీలారావు", amount: 10000, address: "JAI SREE RAM", level: "silver" },
+// { id: 50, name: "పెద్ది సాయిరెడ్డి-అనిత", amount: 10000, address: "JAI SREE RAM", level: "silver" },
+{ id: 51, name: "కంచి వేణు", amount: 10000, address: "JAI SREE RAM", level: "silver" },
+{ id: 52, name: "గట్టు ప్రదీప్ కుమార్ గౌడ్ - మమత", amount: 10000 , address: "JAI SREE RAM", level: "silver" },
+{ id: 53, name: "మోతె రమేష్-సునిత", amount: 6232 , address: "JAI SREE RAM", level: "silver" },
+{ id: 54, name: "చౌడమల్ల రంజిత్-సుమలత", amount: 6116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 55, name: "నరాల ఆనంద్ రమాదేవి ", amount: 6161, address: "JAI SREE RAM", level: "silver" },
+{ id: 56, name: "సుంకరి అనిల్కుమార్-సురక్షిత", amount:  5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 57, name: "ప్రతాప అనురాధ-(కీ॥శే॥ వెంకటేశ్వర్లు)", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 58, name: "భూసారపుకనుకలక్ష్మి-హనుమయ్య", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 59, name: "ఏలూరి అరుణశ్రీ-కీ॥శే॥ ఆదిరెడ్డి", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 60, name: "తక్కళ్ళపెల్లి వినోద-సంపర్రావు", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 61, name: "ఇలాసాగరం వీరస్వామి-కళావతి ",amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 62, name: "గూడ స్పందన-ఉదయ్కుమార్రెడ్డి ", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 63, name: "ముక్క కనుకలక్ష్మి-రమేష్ ", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 64, name: "గట్టు వశిష్ఠ - సింధు", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 65, name: "నెల్లి వరలక్ష్మి-రాజు", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 66, name: "వేముల దేవేందర్రెడ్డి-సువ ", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 67, name: "చందుపట్ల జనార్థన్-లలిత", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 68, name: "వేముల యాదగిరి-కీ॥శే॥ సుగుణ", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 69, name: "వేముల రమేష్-రమాదేవి", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 70, name: "నార్ల సత్తయ్య-శ్రీమతి", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 71, name: "గోలి శ్రీనివాస్-రజని", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 72, name: "మాడిశెట్టి అశ్విని-ప్రసాద్ (వివేకవర్ధిని మాడల్ హై స్కూల్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 73, name: "దిగువ హనుమాన్సింగ్ - దీపిక (మీనాక్షి మెటల్ స్టోర్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 74, name: "పైళ్ళ వెంకట్రెడ్డి-రూప", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 75, name: "విడపు రాజు-రోజా (ధనవర్ష)", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 76, name: "శివనాథుని వేణు", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 77, name: "గంధం శివరాం -రాజేశ్వరి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 78, name: "బాణాల వివేకానందచారి కోమల", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 79, name: "ఆవునూరి ఐలయ్య-రమాదేవి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 80, name: " తాళ్ళ కుమారస్వామి - స్వరూప", amount:5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 81, name: "కటకం శ్రీనివాస్-జ్యోతి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 82, name: "మంద రమేష్కుమార్-ఉమాదేవి (ఆర్.కె.)", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 83, name: "మిర్యాల్కార్ చందాజీ-విజయలక్ష్మి", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 84, name: "చిదురాల ప్రభాకర్ కన్యాకుమారి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 85, name: "పర్నెం తిరుపతిరెడ్డి-శ్రీలత (రాహూల్ మోటర్స్, హుజురాబాద్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 86, name: " కటకం మారుతిప్రసాద్-లక్ష్మి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 87, name: "తూము వెంకట్రెడ్డి-రజిత", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 88, name: "మ్యాకల వసంత- రాజిరెడ్డి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 89, name: "కొమురవెల్లి సత్యనారాయణ", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 90, name: "కాసర్ల శ్రీహరి - శారద", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 91, name: "మ్యాకల వసంత-రాజిరెడ్డి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 92, name: "అయిత సందీప్ - ప్రసన్న (హనుమాన్ క్యాటరింగ్)", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 93, name: "దుగ్యాల శ్రీలత-వేణుగోపాల్", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 94, name: "సారబుడ్ల అశోత్రెడ్డి-పద్మ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 95, name: " కొమురవెల్లి సత్యనారాయణ", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 96, name: "గొట్టిముక్కుల కేవవరావు- పద్మ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 97, name: "కాసర్ల శ్రీహరి - శారద", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 98, name: "తూము వెంకట్రెడ్డి-రజిత", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 99, name: "బత్తుల మానస", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 100, name: "పోలోజు రాజు-శ్రావణి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 101, name: "అయిత సందీప్ - ప్రసన్న (హనుమాన్ క్యాటరింగ్)", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 102, name: "దుగ్యాల శ్రీలత-వేణుగోపాల్", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 103, name: "గొట్టిముక్కుల కేవవరావు-పద్మ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 104, name: "బత్తుల మానస", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 105, name: "పోలోజు రాజు-శ్రావణి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 106, name: "సంగెం రాజేందర్-శృతి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 107, name: "సంగెం వెంకటేశ్వర్లు-రాజేశ్వరి", amount:5016  , address: "JAI SREE RAM", level: "silver" },
+{ id: 108, name: "దేవునూరి రమేష్ జ్ఞాపకార్ధం,దేవునూరి సాయితేజ-లాస్యశ్రీ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 109, name: "కోటోజు సంతోష్ - వర్షిత (సంతోష్ జ్యూవెల్లర్సి, హుజురాబాద్)", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 110, name: "తాడూరి వెంకటరమణి-సత్యనారాయణ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 111, name: "బద్దిపడుగు శ్రీలత-తిరుపతిరెడ్డి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 112, name: "డా నీరుమల్ల చంద్రమౌళి -నాగరత్నం", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 113, name: "డా పాంపాటి నాగలింగం-శైలజ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 114, name: "అంతం స్వప్న-సంజీవరెడ్డి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 115, name: "చౌడమల్ల శ్రీనివాస్-గంగజల", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 116, name: "దాసరి భవాణిరెడ్డి-అనిల్రెడ్డి", amount:5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 117, name: "పరివేద సత్యలక్ష్మి  కీ॥శే॥ హన్మంతరావు", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 118, name: "వింజమూరి తిరుపతమ్మ కీ॥శే॥ నర్సయ్య", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 119, name: "రావికంటి రామకృష్ణయ్య- సక్కుబాయి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 120, name: "జాలి నరేందర్రెడ్డి-సుజాత", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 121, name: "అంతం అభిశేఖర్రెడ్డి-నవిత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 122, name: "అంతం అమితేష్రెడ్డి-కావ్య", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 123, name: "భూపతి అనిల్ కుమార్-అఖిల", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 124, name: "సముద్రాల గీత -శ్రేయ", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 125, name: "క్యాస సుకన్య -రవిందర్", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 126, name: "గొల్లపెల్లి రవిందర్", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 127, name: "మాడ భాగ్యలక్ష్మి- రాజిరెడ్డి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 128, name: "సిద్ది నమఃశివాయ-సునిత", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 129, name: "గందెశివశంకర్-భార్గవి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 130, name: "మాగంటి చలపతిరావు", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 131, name: "సి. హెచ్. జయ", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 132, name: "ఓద్దిపర్తి సంజయ్కుమార్ ఆచార్యులు-శ్రీనిధి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 133, name: "నాగమల్ల వెంకటేశ్వర్లు- పద్మావతి", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 134, name: "చింత చంద్రయ్య-విజయలక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 135, name: "కోలిపాక తిరుపతి- స్వరూప", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 136, name: "బల్లు సుశీల-ఆంజనేయులు", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 137, name: "నార్లగిరి శ్రవణ్-రూపశ్రీ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 138, name: "దుడ్డెల చంద్రయ్య-నీలమ్మ", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 139, name: "శిలా శ్రీనివాస్-గీత", amount:5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 140, name: "కుంట బిక్షపతి-వెంకటరమణ", amount:5021 , address: "JAI SREE RAM", level: "silver" },
+{ id: 141, name: "గూడ మహేందర్రెడ్డి-తిరుమల", amount: 5016, address: "JAI SREE RAM", level: "silver" },
+{ id: 142, name: "ప్రతాప రాజయ్య-వాణిశ్రీ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 143, name: "కొండ రాజు-అంజలి", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 144, name: "నల్లా భూమిరెడ్డి-ధరణి సుష్మ", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 145, name: "దాసమల్ల దేవేందర్-గీత", amount:5016 , address: "JAI SREE RAM", level: "silver" },
+{ id: 146, name: "రావుల మాలతి-రాజిరెడ్డి", amount:5011 , address: "JAI SREE RAM", level: "silver" },
+{ id: 147, name: "శ్రీరాం చక్రధార్-పల్లవి మనోజ", amount:5000 , address: "JAI SREE RAM", level: "silver" },
+{ id: 148, name: "నల్ల సురేందర్ రమాదేవి", amount:5000 , address: "JAI SREE RAM", level: "silver" },
+{ id: 149, name: "గుర్రల తిరుపతిరెడ్డి", amount: 5001, address: "JAI SREE RAM", level: "silver" },
+{ id: 150, name: "బుర్ర ఆగయ్య", amount: 5001, address: "JAI SREE RAM", level: "silver" },
+{ id: 151, name: "ఇల్లందుల నాగేశ్వర్రావు-నిరూప", amount:5001 , address: "JAI SREE RAM", level: "silver" },
+{ id: 152, name: "మచ్చిక అనిల్", amount: 5000, address: "JAI SREE RAM", level: "silver" },
+{ id: 153, name: "సిరిమల్లె శివ-అపర్ణ", amount: 5001, address: "JAI SREE RAM", level: "silver" },
+{ id: 154, name: "డా॥ పల్లెనారాయణరెడ్డి-తిరుమల", amount:5001 , address: "JAI SREE RAM", level: "silver" },
+{ id: 155, name: "నల్ల సురేందర్-రమాదేవి", amount:5000 , address: "JAI SREE RAM", level: "silver" },
+{ id: 156, name: "పడాల వెంకటరామిరెడ్డి-మమత", amount:5000 , address: "JAI SREE RAM", level: "silver" },
+{ id: 157, name: "సి. హెచ్. కళ్యాణ్", amount:5001 , address: "JAI SREE RAM", level: "silver" },
+
+{ id: 151, name: "శీలంకూరు శ్వేత-నర్సింహారావు", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 152, name: "బైసాని సుబ్బలక్ష్మి-కీ॥శే॥ వెంకటేశ్వర్లు", amount: 5116 , address: "JAI SREE RAM", level: "silver" },
+{ id: 153, name: "రావికంటి శ్రీనివాస్-విజయ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 154, name: "చందా అన్నపూర్ణ-చంద్రగుప్త", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 155, name: "గంగిశెట్టి సనిత-శంకర్", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 156, name: "గడ్డం అరుణ-రమేష్", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 157, name: "మౌటం రవిందర్ రాధారాణి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 158, name: "చౌడమల్ల శ్రీనివాస్-రాధిక", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 159, name: "ఎర్రం రాజన్న- కరుణాదేవి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 160, name: "కడార్ల శ్రీనివాస్ చారి -జమున", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 161, name: "కందుకూరి విశ్వప్రసాద్-భారతి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 162, name: "సంగెం శ్రీధర్ - సుమలత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 163, name: "తొవిటి ఆనందం- సరళ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 164, name: "పామెర రాజేశ్వర్రావు-విజయ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 165, name: "వడ్లూరి సుదర్శన్-ధనలక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 166, name: "ముదం కుమారస్వామి-సత్యవతి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 167, name: "జున్నోజు భాస్కర్ -శ్యామల", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 168, name: "దొంతుల మల్లయ్య", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 169, name: "వడ్లూరి విజయ్ కుమార్-కవిత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 170, name: "వేములపల్లి శ్రీనివాసరావు-శాంతి (సప్తగిరి ట్రాక్టర్స్, హుజురాబాద్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 171, name: "సంగెం శ్రీనివాస్-సుజన", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 172, name: "కీ॥శే॥ చీకోటి హరికిషన్ జ్ఞాపకార్ధ వారి భార్య శ్రీమతి త్రివేణి, చీకోటి రాహూల్-సరస్వతి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 173, name: "కర్ర పాపిరెడ్డి - సరళ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 174, name: "నిమ్మల కోటేశ్వర్రావు-కోమల", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 175, name: "పాలడుగుల శ్రీనివాస్-గిరిజ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 176, name: "మంచికట్ల ఆంజేయులు-రాణి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 177, name: "ఈనిమిళ్ళ శ్రీనివాస్-లలిత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 178, name: "కొంకటి రాజు-విజయ (కెవి. ఆర్. ఫ్యాషన్స్, హుజురాబాద్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 179, name: "పుల్లూరి వేణుగోపాల్-విజయ (వెంకటసాయి ఫర్టిలైజర్ సైదాపూర్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 180, name: "కొలిపాక శ్రీనివాస్-నిర్మల", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 181, name: "దొండ నాగరాజు-రోజా (జు శిళి ఎ మెడికల్, హుజురాబద్.)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 182, name: "పిల్లలమర్రి సుదర్శన్-లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 183, name: "నమిలకొండ సుదర్శనాచార్యులు-లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 184, name: "శివనాథుని శ్రీనివాస్- పద్మ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 185, name: "ఎలుగూరి శివకుమార్-స్వర్ణలత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 186, name: "కాళ్ళబసవయ్య - లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 187, name: "బద్దుల శ్రీధర్-దివ్య", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 188, name: "చొల్లేటి సమ్మిరెడ్డి-మాధవి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 189, name: "గొట్టెముక్కుల సంపర్రావు-సరోజ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+
+
+{ id: 200, name: "అంగిరిక రాజేంద్రప్రసాద్-రమాదేవి (బోర్నపల్లి)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 201, name: "గోలి శ్రీనివాస్-రజని", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 202, name: "మాడిశెట్టి అశ్విని-ప్రసాద్ (వివేకవర్ధిని మాడల్ హై స్కూల్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 203, name: "దిగువ హనుమాన్సింగ్ - దీపిక (మీనాక్షి మెటల్ స్టోర్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 204, name: "పైళ్ళ వెంకట్రెడ్డి-రూప", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 205, name: "విడపు రాజు-రోజా (ధనవర్ష)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 206, name: "గంధం శివరాం -రాజేశ్వరి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 207, name: "ఆవునూరి ఐలయ్య-రమాదేవి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 208, name: "తాళ్ళ కుమారస్వామి - స్వరూప", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 209, name: "కటకం శ్రీనివాస్-జ్యోతి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 210, name: "మంద రమేష్కుమార్-ఉమాదేవి (ఆర్.కె.)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 211, name: "మిర్యాల్కార్ చందాజీ-విజయలక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 212, name: "చిదురాల ప్రభాకర్ కన్యాకుమారి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 213, name: "పార్నెం తిరుపతిరెడ్డి-శ్రీలత (రాహూల్ మోటర్స్, హుజురాబాద్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 214, name: "కటకం మారుతిప్రసాద్-లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 215, name: "వడ్లూరి విజయ్ కుమార్- కవిత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 216, name: "వేములపల్లి శ్రీనివాసరావు-శాంతి (సప్తగిరి ట్రాక్టర్స్, హుజురాబాద్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 217, name: "సంగెం శ్రీనివాస్-సుజన", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 218, name: "కర్ర పాపిరెడ్డి సరళ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 219, name: "నిమ్మల కోటేశ్వర్రావు-కోమల", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 220, name: "పాలడుగుల శ్రీనివాస్-గిరిజ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 221, name: "మంచికట్ల ఆంజేయులు-రాణి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 222, name: "ఈనిమిళ్ళ శ్రీనివాస్-లలిత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 223, name: "కొంకటి రాజు-విజయ (కెవి. ఆర్. ఫ్యాషన్స్, హుజురాబాద్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 224, name: "పుల్లూరి వేణుగోపాల్-విజయ (వెంకటసాయి ఫర్టిలైజర్ సైదాపూర్)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 225, name: "కొలిపాక శ్రీనివాస్-నిర్మల", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 226, name: "దొండ నాగరాజు-రోజా (జు శిళి ఎ మెడికల్, హుజురాబద్.)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 227, name: "పిల్లలమర్రి సుదర్శన్-లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 228, name: "నమిలకొండ సుదర్శనాచార్యులు-లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 229, name: "శివనాథుని శ్రీనివాస్-పద్మ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 230, name: "ఎలుగూరిశివకుమార్-స్వర్ణలత", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 231, name: "కాళ్ళబసవయ్య-లక్ష్మి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 232, name: "గర్రెపెల్లి ప్రభాకర్-కళావతి", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 233, name: "నగునూరి సత్యనారాయణ-నిర్మల ", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 234, name: "బద్దుల శ్రీధర్-దివ్య", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+{ id: 235, name: "చొల్లేటి సమ్మిరెడ్డి- మాధవి", amount: 5116, address: "JAI SREE RAM", level: "silver" }, 
+{ id: 236, name: "గొట్టెముక్కుల సంపర్రావు-సరోజ", amount: 5116, address: "JAI SREE RAM", level: "silver" },                                                                                                                                                                                                                                                                         
+{ id: 237, name: "అంగిరిక రాజేంద్రప్రసాద్-రమాదేవి (బోర్నపల్లి)", amount: 5116, address: "JAI SREE RAM", level: "silver" },
+
+ 
+    ];
+
+    const container = document.getElementById('donorContainer');
+donors.sort((a, b) => b.amount - a.amount);
+    donors.forEach(donor => {
+      const card = document.createElement('div');
+      card.className = 'donor-card';
+      card.innerHTML = `
+        <div class="donor-tag">Donor</div>
+        <div class="donor-name">${donor.name}</div>
+        <div class="donor-amount">${donor.amount.toLocaleString()}/-</div>
+        <div class="jai-ram">${donor.address}</div>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>
